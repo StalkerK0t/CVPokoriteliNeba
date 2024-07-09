@@ -5,16 +5,17 @@ import numpy as np
 def show(name, img):
     cv2.namedWindow(name, cv2.WINDOW_KEEPRATIO)
     cv2.imshow(name, img)
-    cv2.resizeWindow(name, 1920 // 2, 1080 // 2)
+    cv2.resizeWindow(name, 1920 // 4, 1080 // 4)
 
-image = cv2.imread("dataset/2/image_050.jpg")
+image = cv2.imread("dataset/origin/0/image_110.jpg")
 show("RGB", image)
 
 image = cv2.bilateralFilter(image,9,175,175)
 
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
-_, bin = cv2.threshold(gray, 200, 255, cv2.THRESH_BINARY_INV)
+_, bin = cv2.threshold(gray, 190, 255, cv2.THRESH_BINARY_INV)
+show("BIN", bin)
 
 
 contours, hierarchy = cv2.findContours(bin, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
@@ -42,10 +43,10 @@ c = square_contour[np.argmax(square_contour[:, :, 1]), 0, :]  # bottom left angl
 a = a[0] - x, a[1] - y
 b = b[0] - x, b[1] - y
 c = c[0] - x, c[1] - y
-
+print(a, b, c)
 img = cv2.cvtColor(crop, cv2.COLOR_GRAY2BGR)
 for point in (a, b, c):
-    print(point)
+    # print(point)
     cv2.circle(img, point, 5, (0, 0, 255), 10)
 
 delta = 10
@@ -57,10 +58,10 @@ warp_mat = cv2.getAffineTransform(src, dst)
 finish = cv2.warpAffine(crop, warp_mat, (crop.shape[1], crop.shape[0]))
 finish = finish[delta:final_size-delta, delta:final_size-delta]
 
-print(warp_mat)
+# print(warp_mat)
 
 cv2.imshow("FINAL", finish)
-print(finish.shape)
+# print(finish.shape)
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
