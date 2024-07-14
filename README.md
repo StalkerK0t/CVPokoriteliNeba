@@ -80,42 +80,43 @@ Total trainable params: 676,068
 # 4. Тестирование обученной нейросети
 
 На обучение было отведено 5 эпох. Результаты для каждой буквы в алфавитном порядке получились следующие:
-- Accuracy of     0 : 97.849462 % 
-- Accuracy of     1 : 98.876404 % 
-- Accuracy of     2 : 98.823529 % 
-- Accuracy of     3 : 100.000000 % 
-- Accuracy of     4 : 97.872340 % 
-- Accuracy of     5 : 93.333333 % 
-- Accuracy of     6 : 99.115044 % 
-- Accuracy of     7 : 91.743119 % 
-- Accuracy of     8 : 84.313725 % 
-- Accuracy of     9 : 85.555556 % 
-- Accuracy of    10 : 86.250000 % 
-- Accuracy of    11 : 96.428571 % 
-- Accuracy of    12 : 95.575221 % 
-- Accuracy of    13 : 86.666667 % 
-- Accuracy of    14 : 90.384615 % 
-- Accuracy of    15 : 95.555556 % 
-- Accuracy of    16 : 88.392857 % 
-- Accuracy of    17 : 88.659794 % 
-- Accuracy of    18 : 99.000000 % 
-- Accuracy of    19 : 82.954545 % 
-- Accuracy of    20 : 97.142857 % 
-- Accuracy of    21 : 90.425532 % 
-- Accuracy of    22 : 90.322581 % 
-- Accuracy of    23 : 71.849057 % 
-- Accuracy of    24 : 87.155963 % 
-- Accuracy of    25 : 85.714286 % 
-- Accuracy of    26 : 94.318182 % 
-- Accuracy of    27 : 94.782609 % 
-- Accuracy of    28 : 75.651376 % 
-- Accuracy of    29 : 90.816327 % 
-- Accuracy of    30 : 95.049505 % 
-- Accuracy of    31 : 100.000000 % 
-- Accuracy of    32 : 100.000000 % 
-- Accuracy of    33 : 98.198198 % 
-- Accuracy of    34 : 97.826087 % 
-- Accuracy of    35 : 96.875000 %
+
+- Accuracy of     0 : 98.958333 %
+- Accuracy of     1 : 100.000000 %
+- Accuracy of     2 : 100.000000 %
+- Accuracy of     3 : 95.959596 % 
+- Accuracy of     4 : 91.818182 %
+- Accuracy of     5 : 86.813187 %
+- Accuracy of     6 : 98.260870 %
+- Accuracy of     7 : 98.148148 %
+- Accuracy of     8 : 98.347107 %
+- Accuracy of     9 : 95.789474 %
+- Accuracy of    10 : 92.156863 %
+- Accuracy of    11 : 100.000000 %
+- Accuracy of    12 : 100.000000 %
+- Accuracy of    13 : 95.535714 %
+- Accuracy of    14 : 99.082569 %
+- Accuracy of    15 : 98.214286 %
+- Accuracy of    16 : 97.701149 %
+- Accuracy of    17 : 100.000000 %
+- Accuracy of    18 : 100.000000 %
+- Accuracy of    19 : 100.000000 %
+- Accuracy of    20 : 100.000000 %
+- Accuracy of    21 : 97.849462 %
+- Accuracy of    22 : 95.744681 %
+- Accuracy of    23 : 90.476190 %
+- Accuracy of    24 : 99.019608 %
+- Accuracy of    25 : 99.082569 %
+- Accuracy of    26 : 98.823529 %
+- Accuracy of    27 : 98.958333 %
+- Accuracy of    28 : 63.736264 %
+- Accuracy of    29 : 96.551724 %
+- Accuracy of    30 : 98.924731 %
+- Accuracy of    31 : 97.979798 % 
+- Accuracy of    32 : 99.074074 % 
+- Accuracy of    33 : 100.000000 %
+- Accuracy of    34 : 100.000000 %
+- Accuracy of    35 : 100.000000 %
 
 В общем случае точность распознавания составила более 85% процентов, за исключением букв 23 и 28, которые при повороте на 180° превращаются друг в друга.
 
