@@ -53,7 +53,7 @@ def image_prep(image):
 
 paths = []
 for i in range(36):
-    paths.append(glob.glob(f".\\dataset\\origin\\{i}\\*"))
+    paths.append(glob.glob(f".\\dataset\\origin\\{i:02d}\\*"))
 paths = np.ravel(paths)
 
 for path in paths:
